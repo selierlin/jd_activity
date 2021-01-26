@@ -12,7 +12,7 @@
 ============Quantumultx===============
 [task_local]
 #盲盒抽京豆
-1 7 * * * https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/main/Icon/shylocks/jd_mh.jpg, enabled=true
+1 7 * * * https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_mh.jpg, enabled=true
 ================Loon==============
 [Script]
 cron "1 7 * * *" script-path=https://raw.githubusercontent.com/shylocks/Loon/main/jd_mh.js,tag=盲盒抽京豆
@@ -34,7 +34,6 @@ if ($.isNode()) {
   })
   if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {
   };
-  if(JSON.stringify(process.env).indexOf('GITHUB')>-1) process.exit(0)
 } else {
   let cookiesData = $.getdata('CookiesJD') || "[]";
   cookiesData = jsonParse(cookiesData);
