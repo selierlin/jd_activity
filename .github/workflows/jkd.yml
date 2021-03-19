@@ -31,7 +31,7 @@ jobs:
       - name: '运行 【聚看点】'
         run: |
           cd ~/scripts
-          node jd_jkd.js
+          node jkd.js
         env:
           JKD_COOKIE: ${{ secrets.JKD_COOKIE }}
           JKD_USER_AGENT: ${{ secrets.JKD_USER_AGENT }}
