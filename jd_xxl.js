@@ -406,7 +406,7 @@ function beginLevel() {
           } else {
             if (safeGet(data)) {
               data = JSON.parse(data)
-              // console.log(data)
+              console.log(data)
               if (data.code === 0) {
                 console.log(`第${$.level}关卡开启成功，等待30秒完成`)
                 $.strength -= 5
