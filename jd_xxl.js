@@ -594,7 +594,7 @@ function getDailyMatch() {
           } else {
             if (safeGet(data)) {
               data = JSON.parse(data)
-              // console.log(data)
+              console.log(data)
               if (data.code === 0) {
                 // console.log(data)
                 $.maxScore = parseInt(data.dailyMatchList[data.dailyMatchList.length - 1]['sScore'])
