@@ -593,9 +593,11 @@ function getDailyMatch() {
             console.log(resp)
             console.log(`${$.name} API请求失败，请检查网路重试`)
           } else {
+              data = JSON.parse(data)
+               console.log(data)
             if (safeGet(data)) {
               data = JSON.parse(data)
-              // console.log(data)
+               console.log(data)
               if (data.code === 0) {
                 // console.log(data)
                 $.maxScore = parseInt(data.dailyMatchList[data.dailyMatchList.length - 1]['sScore'])
