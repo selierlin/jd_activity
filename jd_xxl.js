@@ -512,7 +512,7 @@ function finishTask(taskId) {
     "activeid": ACT_ID,
     "activeId": ACT_ID,
     // "inviter": undefined,
-    "token": $.to,
+    "token": $.gameToken,
     "authcode": $.authcode
   }
   return new Promise(resolve => {
@@ -731,7 +731,7 @@ function marketGoods() {
     "id": $.id,
     "activeid": ACT_ID,
     "activeId": ACT_ID,
-    "token": $.to,
+    "token": $.gameToken,
     "authcode": $.authcode
   }
   return new Promise(resolve => {
@@ -773,7 +773,7 @@ function buyGood(consumeid) {
     "id": $.id,
     "activeid": ACT_ID,
     "activeId": ACT_ID,
-    "token": $.to,
+    "token": $.gameToken,
     "authcode": $.authcode
   }
   return new Promise(resolve => {
