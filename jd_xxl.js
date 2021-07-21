@@ -581,7 +581,7 @@ function execute(body) {
 function getDailyMatch() {
   let body = {
     'gameId': $.gameId,
-    'token': $.gameToken,
+    'token': "${$.gameToken}",
     'reqsId': $.reqId++
   }
   return new Promise(resolve => {
